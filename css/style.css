@@ -153,16 +153,15 @@ a {
     margin-top: 20px;
 }
 
-.btn-1{
+.btn-1, .btn-2{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    gap: 20px;
 }
 
-.btn-2{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+.btn-1{
+    margin-right: 10px;
 }
 
 .filter h3{
@@ -194,11 +193,21 @@ a {
     cursor: default;
 }
 
-/*500 logements*/
-.nb-logement{
-    size: 16px;
+/*nb logements*/
+
+.container-info {
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+    flex-wrap: wrap; 
+    max-width: 100%;
 }
 
+.texte-logement {
+    flex: 1; 
+    min-width: 200px;
+    word-wrap: break-word;
+}
 /*hebergement */
 
 div .hebergement-card{
@@ -323,6 +332,9 @@ div .hebergement-card{
 
 /*activité*/
 
+article.card{
+    margin-top: 20px;
+}
 .activites{
     padding: 30px;
     cursor: pointer;
@@ -444,6 +456,30 @@ nav.assistance{
     .activite-card a{
         margin-bottom: 20px;
     }
+    .filter h3{
+        margin-top: 20px;
+    }
+
+    .filter{
+        display: inline-block;
+        align-items: center;
+        width: 100%;
+    
+    }
+
+    .filter a:hover{
+        background-color:#DEEBFF ;
+    }
+
+    .filter a{
+        width: 130px;
+        height: 30px;
+        margin-bottom: 20px;
+    }
+   
+   .btn-1{
+    margin: 0;
+   }
 
 }
 
@@ -460,6 +496,7 @@ nav.assistance{
 
     section.populaires{
         border-radius: 0px;
+        margin-top: 30px;
     }
 
     .hebergements {
@@ -509,14 +546,17 @@ nav.assistance{
         padding: 20px;
     }
 
-    p.nb-logement{
-        padding-bottom: 0px;
-    }
-    .nb-logement{
-        margin-top: 50px ;
-        margin-bottom: -25px;
+    /*nb logement */
+
+    .container-info {
+        align-items: center; 
     }
 
+    .btn-info {
+        display: flex;
+        align-items: center; 
+    }
+    
     .filter h3{
         text-align: left;
     }
@@ -530,14 +570,14 @@ nav.assistance{
     /*btn filtrer*/
    
     .filter h3{
-        margin-top: 40px;
+        margin-top: 20px;
     }
 
     .filter{
         display: inline-block;
-        justify-content: center;
         align-items: center;
         width: 100%;
+    
     }
 
     .filter a:hover{
@@ -547,20 +587,12 @@ nav.assistance{
     .filter a{
         width: 130px;
         height: 30px;
+        margin-bottom: 20px;
     }
    
-    .btn-1{
-        justify-content: space-around;
-        height: 30px;
-        padding-bottom: 30px;
-        padding-top: 20px;
-    }
-
-    .btn-2{
-        justify-content: space-around;
-        height: 30px;
-        padding-bottom: 10px
-    }
+   .btn-1{
+    margin: 0;
+   }
     
     /*barre recherche */
     .search .btn{
@@ -662,9 +694,6 @@ nav.assistance{
         
     }
 
-    article.card{
-        margin-top: 20px;
-    }
 
     .activite-card .card{
         margin:20px; 
