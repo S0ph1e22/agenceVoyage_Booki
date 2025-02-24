@@ -210,10 +210,11 @@ a {
 }
 /*hebergement */
 
+
 div .hebergement-card{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .hebergement-card img{
@@ -329,6 +330,8 @@ div .hebergement-card{
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
+
+
 
 /*activité*/
 
@@ -508,6 +511,7 @@ nav.assistance{
         padding: 0px;
     }
 
+  
     .populaires-cards {
         display: flex;
         flex-direction: column;
