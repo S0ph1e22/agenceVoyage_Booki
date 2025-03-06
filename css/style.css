@@ -90,9 +90,6 @@ a {
     text-decoration: none;
 }
 
-.find-a-house-subtitle{
-    line-height: 1px;
-}
 
 #place{
     background-color: #F2F2F2;
@@ -149,19 +146,13 @@ a {
     display: flex;
     align-items: center;
     gap: 10px;
-    flex-wrap: wrap;
     margin-top: 20px;
 }
 
-.btn-1, .btn-2{
+.btn-group{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 20px;
-}
-
-.btn-1{
-    margin-right: 10px;
+    gap: 10px;
 }
 
 .filter h3{
@@ -169,26 +160,26 @@ a {
     color: black;
 }
 
-.filter a{
+.btn-group a{
+    display: flex;
     text-decoration: none;
     padding-top: 4px;
     padding-bottom: 4px;
     padding-right: 19px;
     padding-left: 19px;
     border: 2px solid #F2F2F2;
-    display: flex;
     align-items: center;
     gap: 6px;
     border-radius: 25px;
     font-weight: bold;
-    height: 25px;
+    height: 50px;
 }
 
-.filter i {
+.btn-group  i {
     color: #0065FC;;
 }
 
-.filter a:hover{
+.btn-group  a:hover{
     background-color: #DEEBFF;
     cursor: default;
 }
@@ -226,6 +217,10 @@ div .hebergement-card{
 
 .card-subtitle {
     margin-bottom: 5px; 
+}
+
+p.card-subtitle {
+    font-weight: normal;
 }
 
 .hebergement-card .card-title{
@@ -284,6 +279,10 @@ div .hebergement-card{
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+}
+
+.hebergements b{
+    font-size: 18px;
 }
 
 /****** Populaires ***********/
@@ -379,14 +378,15 @@ ul{
 list-style:none;
 }
 
-.les-liens{
+footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.les-liens a{
+footer a{
     line-height: 30px;
+    font-size: 16px;
 }
 
 nav.a-propos {
@@ -459,35 +459,22 @@ nav.assistance{
     .activite-card a{
         margin-bottom: 20px;
     }
-    .filter h3{
-        margin-top: 20px;
-    }
 
     .filter{
-        display: inline-block;
-        align-items: center;
         width: 100%;
-    
+        display: inline;
     }
 
-    .filter a:hover{
-        background-color:#DEEBFF ;
+    .filter h3{
+        margin-top: 20px;
+        width: 100%;
     }
 
-    .filter a{
-        width: 130px;
-        height: 30px;
-        margin-bottom: 20px;
-    }
-   
-   .btn-1{
-    margin: 0;
-   }
 
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px){
+@media (min-width : 320px) and (max-width: 767.98px){
 
     body{
         margin: 0px;
@@ -560,52 +547,36 @@ nav.assistance{
         display: flex;
         align-items: center; 
     }
-    
-    .filter h3{
-        text-align: left;
-    }
 
     /*class recherche*/
     .recherche{
         padding: 20px;
     }
 
-
-    /*btn filtrer*/
-   
-    .filter h3{
-        margin-top: 20px;
+    .btn-group a {
+        width: calc(50% - 48px);
+        padding-top: 4px;
+        padding-bottom: 4px;
+        padding-right: 20px;
+        padding-left: 15px;
     }
 
-    .filter{
-        display: inline-block;
-        align-items: center;
-        width: 100%;
-    
-    }
-
-    .filter a:hover{
-        background-color:#DEEBFF ;
-    }
-
-    .filter a{
-        width: 130px;
-        height: 30px;
-        margin-bottom: 20px;
-    }
-   
-   .btn-1{
-    margin: 0;
-   }
-    
     /*barre recherche */
+
+    .search{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
     .search .btn{
        display: none ;
     }
-
+   
     .search .btn-loupe i{
         color: white;
-        font-size: 20px;          
+        font-size: 17px; 
+        position: absolute; 
     }
     
     .search button{
@@ -623,7 +594,20 @@ nav.assistance{
         margin-top: -50px;
     }
 
-        /*logo*/
+    .find-a-house-subtitle {
+        max-width: 100%; 
+        display: block; 
+    }
+    
+    p.find-a-house-subtitle {
+        width: 335px;
+        overflow-wrap: break-word; 
+        word-wrap: break-word; 
+        white-space: normal;
+    }
+
+
+    /*logo*/
     
     header img{
         margin-top: -70px;
@@ -698,11 +682,15 @@ nav.assistance{
         
     }
 
+    .card-title-activite {
+        max-width: 100%;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        white-space: normal; 
+    }    
 
-    .activite-card .card{
-        margin:20px; 
-        width: 100%;
-      
+    .activite-card article.card{
+        width: 315px;
     }
 
     /*footer*/
