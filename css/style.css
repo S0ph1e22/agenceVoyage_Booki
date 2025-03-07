@@ -90,6 +90,9 @@ a {
     text-decoration: none;
 }
 
+p.find-a-house-subtitle {
+    margin-bottom: 30px;
+}
 
 /*barre de recherche*/
 .search {
@@ -142,7 +145,7 @@ a {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .btn-group{
@@ -179,7 +182,6 @@ a {
     background-color: #DEEBFF;
     cursor: default;
 }
-
 /*nb logements*/
 
 .container-info {
@@ -194,6 +196,8 @@ a {
     flex: 1; 
     min-width: 200px;
     word-wrap: break-word;
+    margin-top:10px ;
+    margin-bottom: 10px;
 }
 
 /****** Hebergements And Populaires ***********/
