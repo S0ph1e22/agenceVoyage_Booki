@@ -91,14 +91,6 @@ a {
 }
 
 
-#place{
-    background-color: #F2F2F2;
-    width: 20px;
-    height: 20px;
-    border: 1px;
-    text-align: center;
-}
-
 /*barre de recherche*/
 .search {
     display: flex;
@@ -106,12 +98,16 @@ a {
     border: 1px solid #F2F2F2;
     border-radius: 15px;
     overflow: hidden;
-    width: 350px;
+    width: 377px;
+    height: 49px;
 }
 
-.search i {
-    padding: 15px;
+.search i#place {
+    background-color: #F2F2F2;
+    padding: 16px;
     color: black;   
+    width: 14px;
+    height: 18px;
 }
 
 .search input {
@@ -119,16 +115,16 @@ a {
     padding: 10px;
     flex: 1;
     outline: none;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .search button {
     background-color: #0065FC;
     color: white;
-    padding-top: 17px;
+    padding-top: 15px;
     padding-left: 16px;
     padding-right: 16px;
-    padding-bottom: 17px;
+    padding-bottom: 15px;
     cursor: pointer;
     font-weight: bold;
     border: none;
@@ -348,7 +344,7 @@ p.card-subtitle {
 .activites .activite-card  {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
+    gap: 33px;
 }
 
 .activites .card-header img{
@@ -580,6 +576,10 @@ footer ul{
         align-items: center;
     }
 
+    .search input {
+        width: 100%; 
+    }
+    
     .search .btn{
        display: none ;
     }
@@ -592,13 +592,11 @@ footer ul{
     
     .search button{
         width: 49px;
-        height: 49px;
         border-radius: 15px;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        border: none;
+        align-items: center; 
     }
+   
 
     /*trouver hebergement*/
     .recherche{
