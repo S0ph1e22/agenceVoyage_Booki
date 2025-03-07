@@ -381,7 +381,6 @@ footer{
     justify-content: space-between;
 }
 
-
 ul{
 list-style:none;
 }
@@ -390,14 +389,14 @@ footer a{
     line-height: 30px;
 }
 
-nav .a-propos{
-    gap: 15px;
-}
-
 footer ul{
     padding-left: 0;
 }
 
+footer nav{
+    width: 30%;
+    min-width: 200px;
+}
 
 
 @media (max-width: 1024px) {
