@@ -335,7 +335,8 @@ p.card-subtitle {
 .card-body {
     display: flex;
     align-items: center;
-    height: 100%;
+    height: 59px;
+    padding-right: 19px;
 }
 
 .activite-card .card{
@@ -344,12 +345,14 @@ p.card-subtitle {
     padding: 0;
     flex-direction: column;
     overflow: hidden;
+    max-width: 297.5px;
 }
 
 .activites{
     padding: 30px;
     cursor: pointer;
     margin-top: 30px;
+    box-sizing: border-box;
 }
 
 .activites h2{
@@ -360,11 +363,13 @@ p.card-subtitle {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 33px;
+    max-width: 1280px;
+    max-height: 439px;
 }
 
 .activites .card-header img{
     height: 380px;
-    width: 297px;
+    width: 297.5px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -462,7 +467,20 @@ footer nav{
     }
 
     /*activité*/
-    
+    .activites .activite-card  {
+        max-width: 864px;
+        max-height: 270px;
+    }
+
+    .activite-card .card{
+        max-width: 193.5px;
+    }
+
+    .card-body{
+        height: 70px;
+        display: inline;
+    }
+
     .activite-card a{
         margin-bottom: 20px;
     }
@@ -673,11 +691,38 @@ footer nav{
     }
 
     /*activité*/
+
+    section#activites{
+        width: 100%;
+        height: 965.02px;
+        margin-bottom: 5em;
+    }
+
     .activites .activite-card{
         display: flex;
         flex-direction: column;
+        max-height: 845px;
+    }
+
+    .activite-card .card{
+        max-width: 100%;
+        margin-top: 5px;
+        height: 200px;
+        overflow: visible;
+    }
+
+    .activites .card-header img{
+        width: 100%;;
+        height: 141px;
     }
     
+    
+    .card-body{
+        height: 59px;
+        display: inline;
+    }
+
+   
     /*footer*/
 
   footer{
